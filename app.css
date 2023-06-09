@@ -25,26 +25,36 @@ body{
 
 h1{
     font-size: 6rem;
-    font-weight: 1000;
     letter-spacing: -.2rem;
 }
+h2{
+    font-size: 3rem;
+}
 
+h3{
+    font-size: 1.5rem;
+}
 p{
     font-size: 1.4rem;
     line-height: 2.2rem;
     font-family: sans-serif;
     font-weight: 100;
 }
+
+.text-aln{
+    text-align: center;
+}
+
+/*--------------HEADER STARTS HERE ---------------------*/
 header{
     position: relative;
     background-image: url(resources/Rectangle\ 613\ \(3\).png);
     background-size: cover;
     height: 100vh;
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    border: 2px solid green;
     /* justify-content: space-between; */
 }
 
@@ -107,3 +117,55 @@ header h1{
     width: auto;
 }
 
+/*--------------HEADER ENDS HERE ---------------------*/
+
+
+
+/*--------------SECTION STARTS HERE ---------------------*/
+
+
+         /*------SERVICE SECTION STARTS HERE -----*/
+
+
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;
+}
+#services>*{
+    margin: 3rem;
+}
+.ser-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5%;
+    row-gap: 13%;
+
+}
+.ser-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.ser-card>*{
+    margin-bottom: 8%;
+}
+
+             /*------SERVICE SECTION ENDS HERE -----*/
+
+
+             /*------PRODUCT SECTION STARTS HERE -----*/
+
+#products{
+    /* height: 40vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid yellow;
+}
+.pro-grid{
+    display: flex;
+
+}
