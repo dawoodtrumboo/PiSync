@@ -9,6 +9,7 @@
 }
 
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,9 +17,12 @@
     
 }
 body{
+    height: 3000px;
     font-family: 'Noto-Sans-Display-Bold';
     color: white;
 }
+
+
 :root {
     font-size: 9.27px;
 }
@@ -41,8 +45,8 @@ p{
     font-weight: 100;
 }
 
-.text-aln{
-    text-align: center;
+.m-bottom-2{
+    margin-bottom: .5rem;
 }
 
 /*--------------HEADER STARTS HERE ---------------------*/
@@ -122,7 +126,12 @@ header h1{
 
 
 /*--------------SECTION STARTS HERE ---------------------*/
-
+section{
+    background-color: #E1EBFA;
+}
+section:nth-child(2n+1){
+    background-color: #F4F7FF;
+}
 
          /*------SERVICE SECTION STARTS HERE -----*/
 
@@ -132,6 +141,8 @@ header h1{
     flex-direction: column;
     align-items: center;
     border: 2px solid blue;
+    height: auto;
+
 }
 #services>*{
     margin: 3rem;
@@ -140,7 +151,8 @@ header h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:5%;
-    row-gap: 13%;
+    row-gap: 3rem;
+    /* height: 72vh; */
 
 }
 .ser-card{
@@ -148,6 +160,7 @@ header h1{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /* margin-bottom: 13%; */
 }
 .ser-card>*{
     margin-bottom: 8%;
@@ -159,13 +172,48 @@ header h1{
              /*------PRODUCT SECTION STARTS HERE -----*/
 
 #products{
+    
     /* height: 40vh; */
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border: 2px solid yellow;
+    align-items: center;
+    gap: 1.5rem;
+    /* border: 2px solid yellow; */
 }
 .pro-grid{
+    
     display: flex;
+    /* border: 1px solid blue; */
+    justify-content: space-evenly;
+    /* gap: 2rem; */
 
 }
+.pro-card{
+    background-color: white;
+    margin-left: 2.5rem;
+    border-radius: .5rem;
+}
+
+.label{
+    margin: 2rem;
+}
+
+#products .btn-blue{
+    padding: 1.5rem 7rem 1.5rem 7rem;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+            /*------PRODUCT SECTION ENDS HERE -----*/
+
+
+            /*------TEAM SECTION STARTS HERE -----*/    
+
+    
+#team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
