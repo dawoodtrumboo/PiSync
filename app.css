@@ -144,7 +144,7 @@ header h1{
 
 /*--------------SECTION STARTS HERE ---------------------*/
 
-@media (max-device-height:670px){
+@media (max-device-height:820px){
 
     header h1{
         margin:220px 2rem 0 2rem;
