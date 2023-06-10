@@ -137,13 +137,6 @@ header h1{
     width: auto;
 }
 
-
-/*--------------HEADER ENDS HERE ---------------------*/
-
-
-
-/*--------------SECTION STARTS HERE ---------------------*/
-
 @media (max-device-height:820px){
 
     header h1{
@@ -152,6 +145,27 @@ header h1{
     
     }
 }
+@media (max-device-height:720px){
+    header h1{
+        margin:180px 2rem 0 2rem;
+        line-height: 6.5rem;
+    
+    }
+}
+@media (max-device-height:620px){
+    header h1{
+        margin:140px 2rem 0 2rem;
+        line-height: 6.5rem;
+    
+    }
+}
+/*--------------HEADER ENDS HERE ---------------------*/
+
+
+
+/*--------------SECTION STARTS HERE ---------------------*/
+
+
 section{
     background-color: #E1EBFA;
 }
@@ -240,7 +254,7 @@ section:nth-child(2n+1){
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: .5rem;
 }
 .pro-card-style{
     background-image: linear-gradient(88.7deg,#C6DBFF,#E1EBFA);
