@@ -138,27 +138,17 @@ header h1{
 }
 
 @media (max-device-height:820px){
+    header{
+        height: 92vh;
+    }
+    header h1{
+        margin:180px 2rem 0 2rem;
+        line-height: 6.5rem;
+    
+    }
+}
 
-    header h1{
-        margin:180px 2rem 0 2rem;
-        line-height: 6.5rem;
-    
-    }
-}
-@media (max-device-height:720px){
-    header h1{
-        margin:180px 2rem 0 2rem;
-        line-height: 6.5rem;
-    
-    }
-}
-@media (max-device-height:620px){
-    header h1{
-        margin:140px 2rem 0 2rem;
-        line-height: 6.5rem;
-    
-    }
-}
+
 /*--------------HEADER ENDS HERE ---------------------*/
 
 
