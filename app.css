@@ -198,19 +198,23 @@ section:nth-child(2n+1){
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    padding:4rem 0 4rem 0;
     /* border: 2px solid yellow; */
 }
 .pro-grid{
-    
+    /* width: 90%; */
     display: flex;
     /* border: 1px solid blue; */
+    /* align-items: center; */
     justify-content: space-evenly;
-    /* gap: 2rem; */
+    gap: 1rem;
+    padding: .8rem;
+
 
 }
 .pro-card{
     background-color: white;
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
     border-radius: .5rem;
 }
 
@@ -423,4 +427,5 @@ footer{
     background-color: rgba(103, 140 , 146, .7);
     border-radius: .3rem;
 }
-/*--------------SECTION ENDS HERE ---------------------*/
+
+/*--------------FOOTER ENDS HERE ---------------------*/
