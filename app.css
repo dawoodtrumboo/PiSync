@@ -125,24 +125,25 @@ header h1{
 }
 
 .btn-blue{
-    display: flex;
-    align-items: center;
+    
     background-color: #4397A4;
-    border-radius: 4rem;
-    padding: .8em 2.5em;
-    width: auto;
-    height: 35px;
+    border: 1.8px solid #4397A4;
+  
 }
 
 .btn-white{
     
-    border:2px solid white;
-    border-radius: 4rem;
-    padding: 3% 5%;
-    width: auto;
-    height: 35px;
+    border:1.8px solid white;
+   
 }
 
+
+.btn-white,.btn-blue{
+    height: 35px;
+    width: auto;
+    padding: .8em 2.5em;
+    border-radius: 4rem;
+}
 
 
 /*--------------HEADER ENDS HERE ---------------------*/
