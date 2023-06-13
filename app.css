@@ -125,7 +125,8 @@ header h1{
 }
 
 .btn-blue{
-    
+    display: flex;
+    align-items: center;
     background-color: #4397A4;
     border: 1.8px solid #4397A4;
   
