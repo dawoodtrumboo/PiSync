@@ -114,7 +114,7 @@ header h1{
     display: flex;
     width: 70%;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
    
 }
 #h-btn>*{
