@@ -293,12 +293,14 @@ section:nth-child(2n+1){
     gap:4rem;  
 }
 .testo-rev{
+
     gap: 1rem;
     margin:2.5rem;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
+
 .testo-card{
     width: 85%;
     margin-bottom: 4rem;
@@ -309,6 +311,7 @@ section:nth-child(2n+1){
     box-shadow: 0px 8px 15px 4px rgba(0,0,0,.2);
 }
 .stars ul{
+    color: gold;
     display: flex;
     flex-direction: row;
     list-style: none;
