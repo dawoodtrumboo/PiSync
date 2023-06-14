@@ -13,7 +13,7 @@ talkBtn.addEventListener('click',function(){
         }
         window.scrollBy(0,50);
         targetPos-=50;
-    },12);
+    },25);
 
 
 });
