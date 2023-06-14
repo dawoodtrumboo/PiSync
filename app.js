@@ -11,9 +11,9 @@ talkBtn.addEventListener('click',function(){
             clearInterval(interval);
             return;
         }
-        window.scrollBy(0,10);
-        targetPos-=10;
-    },3);
+        window.scrollBy(0,6);
+        targetPos-=6;
+    },0);
 
 
 });
