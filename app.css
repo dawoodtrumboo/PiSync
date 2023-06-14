@@ -154,8 +154,12 @@ header h1{
 .head-btn{ 
     font-size: 1rem;
     padding:0.8rem 1.5rem;
+    
 }
-
+.head-btn a{
+    text-decoration: none;
+    color: inherit;
+}
 /*--------------HEADER ENDS HERE ---------------------*/
 
 
@@ -456,9 +460,7 @@ footer{
     /* flex-direction: ; */
     justify-content: space-between;
 }
-.detailed-div{
-    /* border:1px solid red; */
-}
+
 .social>*{
     margin-left: 1rem;
     margin-bottom: 1rem;
