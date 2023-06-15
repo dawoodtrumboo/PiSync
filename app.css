@@ -97,7 +97,7 @@ header>*{
     z-index: 0;
 }
 header h1{
-    margin:220px 2rem 0 2rem;
+    margin:23.73rem 2rem 0 2rem;
     line-height: 6.5rem;
 
 }
@@ -137,7 +137,7 @@ header h1{
 
 .btn-white{
     background-color: transparent;
-    border:1.8px solid white;
+    border:.19rem solid white;
    
 }
 
@@ -146,7 +146,7 @@ header h1{
     font-family: "Noto-Sans-Medium";
     color: white;
     font-size: 1.1rem;
-    height: 35px;
+    height: 3.77rem;
     width: auto;
     padding: .8em 2em;
     border-radius: 4rem;
@@ -206,13 +206,13 @@ section:nth-child(2n+1){
     /* margin-bottom: 13%; */
 }
 .ser-text{
-    min-height: 40px;
+    min-height: 4.31rem;
     display: flex;
     align-items: center;
     /* border: 1px solid red; */
 }
 .ser-card>*{
-    margin-bottom: 5px;
+    margin-bottom: .53rem;
 }
 .ser-card img{
     width: 4.3rem;
@@ -302,8 +302,8 @@ section:nth-child(2n+1){
 }
 
 .logo-bar{
-    border-top: 1px solid #486A6E;
-    border-bottom: 1px solid #486A6E;
+    border-top: .1rem solid #486A6E;
+    border-bottom: .1rem solid #486A6E;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -339,7 +339,7 @@ section:nth-child(2n+1){
 }
 
 .tem img{
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 .1rem .53rem 0 rgba(0,0,0,0.2);
     padding: .3rem;
 }
 
@@ -351,7 +351,7 @@ section:nth-child(2n+1){
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 8px 15px 4px rgba(0,0,0,.2);
+    box-shadow: 0 .86rem 1.6rem .43rem rgba(0,0,0,.2);
 }
 .stars ul{
     color: gold;
@@ -406,7 +406,7 @@ section:nth-child(2n+1){
     min-height: 50%;
     border-radius: .3rem;
     margin-bottom: 3rem;
-    box-shadow: 0px 17.38px 34.75px 0px rgba(59, 130,246 ,.25);
+    box-shadow: 0px 1.87rem 3.74rem 0 rgba(59, 130,246 ,.25);
 }
 form{
     display: flex;
@@ -421,20 +421,20 @@ table{
     width: 100%;
 }
 td{
-    padding-right: 10px;
-    padding-bottom: 20px;
+    padding-right: 1.07rem;
+    padding-bottom: 2.15rem;
     width: 50%;
     
 }
 td>*{
     
-    margin:2px;
-    padding: 2px;
-    margin-left: 3px;
+    margin:.21rem;
+    padding: .21rem;
+    margin-left: .32rem;
     /* height: 90%; */
 }
 form input,textarea{
-    border:.5px solid#486A6F;
+    border:.05rem solid#486A6F;
     border-radius: .2rem;
     background-color: transparent;
     box-sizing: border-box;
@@ -519,7 +519,7 @@ footer{
 .social>*{
     margin-left: 1rem;
     margin-bottom: 1rem;
-    font-size: 10px;
+    font-size: 1.07rem;
     padding:.8rem;
     background-color: rgba(103, 140 , 146, .7);
     border-radius: .3rem;
@@ -550,10 +550,12 @@ footer{
     }
    
     .ser-text{
-        min-height:55px;
+        /* min-height:55px; */
+        min-height: 4.31rem;
     }
     .ser-card>*{
-        margin-bottom: 4px;
+        /* margin-bottom: 4px; */
+        margin-bottom: .53rem;
     }
     /*------SERVICE SECTION ENDS HERE -----*/
 
@@ -624,7 +626,7 @@ footer{
     border-radius: .3rem;
     
     margin-bottom: 3rem;
-    box-shadow: 0px 17.38px 34.75px 0px rgba(59, 130,246 ,.25);
+    box-shadow: 0 1.87rem 3.74rem 0 rgba(59, 130,246 ,.25);
 }
 
 
