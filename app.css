@@ -70,7 +70,7 @@ header{
     position: relative;
     background-image: url(resources/HeaderImg.png);
     background-size: cover;
-    height: 93vh;
+    min-height: 93vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,13 +307,25 @@ section:nth-child(2n+1){
 }
 .testo-rev{
 
+    position: relative;
     gap: 1rem;
     margin:2.5rem;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-.testo-img{
+.tem{
+    display: flex;
+    align-items: center;
+
+    /* border: 1px solid green; */
+    gap: .8rem;
+
+    /* positi
+    on: absolute;
+    left:0; */
+}
+/* .testo-img{
     background-image: url(resources/1663693927184.jpeg);
     background-position: center;
     background-size: cover;
@@ -322,7 +334,7 @@ section:nth-child(2n+1){
     height: 80%; 
     width: 60%;
 
-}
+} */
 
 .testo-card{
     width: 85%;
