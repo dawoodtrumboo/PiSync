@@ -83,7 +83,7 @@ header>*{
     margin-left: 5%;
     margin-top: 4rem;
     z-index: 1;
-}
+}   
 #gradient{
     margin:0;
     
@@ -99,7 +99,15 @@ header>*{
 header h1{
     margin:23.73rem 2rem 0 2rem;
     line-height: 6.5rem;
+    text-align: center; 
+    font-family: 'Noto-Sans-Display-Bold';
 
+}
+header span{
+    text-align: center ; 
+    font-size: 1.6rem; 
+    width: 71%; 
+    font-weight: 400;
 }
 #nav{
     /* border: 1px solid blue; */
@@ -663,6 +671,16 @@ footer{
         background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+    }
+    header h1{
+        width: 60%;
+        line-height: 6.5rem;
+        letter-spacing: .1rem;
+        margin:12.53rem 2rem 0 2rem;
+    
+    }
+    header span{
+        width: 51%;
     }
 }
 
