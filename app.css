@@ -183,12 +183,14 @@ section:nth-child(2n+1){
     align-items: center;
     /* border: 2px solid blue; */
     height: auto;
+    width: 100vw;
 
 }
 #services>*{
     margin: 3rem;
 }
 .ser-grid{
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:5%;
@@ -203,8 +205,24 @@ section:nth-child(2n+1){
     text-align: center;
     /* margin-bottom: 13%; */
 }
+.ser-text{
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
 .ser-card>*{
-    margin-bottom: 8%;
+    margin-bottom: 5px;
+}
+.ser-card img{
+    width: 4.3rem;
+    height: 4.3rem;
+}
+.ser-card>p{
+    /* display: flex; */
+    /* text-align: justify;
+    text-align-last: center; */
+   
 }
 
              /*------SERVICE SECTION ENDS HERE -----*/
@@ -317,24 +335,14 @@ section:nth-child(2n+1){
 .tem{
     display: flex;
     align-items: center;
-
-    /* border: 1px solid green; */
     gap: .8rem;
-
-    /* positi
-    on: absolute;
-    left:0; */
 }
-/* .testo-img{
-    background-image: url(resources/1663693927184.jpeg);
-    background-position: center;
-    background-size: cover;
-    grid-row: span 2; 
-    border-radius: 50%; 
-    height: 80%; 
-    width: 60%;
 
-} */
+.tem img{
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+    padding: .3rem;
+}
+
 
 .testo-card{
     width: 85%;
@@ -357,12 +365,36 @@ section:nth-child(2n+1){
              /*------CONTACT SECTION STARTS HERE -----*/
 
 #contact{
+    width: 100vw;
+    color: #4397A4;
+    display: flex;
+    justify-content: center;
+    min-height:65vh ;
+
+}
+
+.contact-flex-box{
+    width: 90%;
     color: #4397A4;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     padding: 0 0 6rem 0;
+
+}
+.contact-head p{
+    color: #5BCCDE; 
+    font-weight:300;
+}
+.contact-head{
+    margin: 4rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    
 }
              
 .contact-box{
@@ -371,6 +403,7 @@ section:nth-child(2n+1){
     /* background-color:#C6DBFF; */
     background-image: linear-gradient(90deg,#d8e5fb,#E1EBFA);
     width: 80%;
+    min-height: 50%;
     border-radius: .3rem;
     margin-bottom: 3rem;
     box-shadow: 0px 17.38px 34.75px 0px rgba(59, 130,246 ,.25);
@@ -384,6 +417,9 @@ form{
     width: 90%;
     /* box-shadow: 0px 30px 15px 4px rgba(198, 219,255 ,0.2) ; */
 }
+table{
+    width: 100%;
+}
 td{
     padding-right: 10px;
     padding-bottom: 20px;
@@ -395,7 +431,7 @@ td>*{
     margin:2px;
     padding: 2px;
     margin-left: 3px;
-    height: 70%;
+    /* height: 90%; */
 }
 form input,textarea{
     border:.5px solid#486A6F;
@@ -406,11 +442,11 @@ form input,textarea{
     
 }
 form input{
-    height: 23.17px;
+    height: 2.49rem;
   
 }
 form textarea{
-    height: 75.29px;
+    height: 8.12rem;
     resize: none;
 }
 
@@ -425,24 +461,21 @@ form button{
     width: 85%;
     /* border: 1px solid red;    */
     display: flex;
-    gap:1.5rem;
+    gap:10%;
+
     justify-content: center;
 
 }
 .contact-icon-inner-div{
-    font-size: 11px;
+    font-size: 1.18rem;
    display: flex;
    align-items: center;
    gap: 1rem;
 }
-.contact-icon-inner-div i{
-    font-size: 17px;
-    background-color:#C6DBFF ;
-    padding: 1rem;
-    border-radius: .2rem;
-}
+
 .contact-icon-inner-div>img{
-    font-size: 17px;
+    width: 4.1rem;
+    height: 4.1rem;
     background-color:#DAE6FB ;
     /* border: 1px solid black; */
     padding: 1rem;
@@ -498,4 +531,130 @@ footer{
     .testo-rev img{
         object-fit: contain;
     }
+}
+
+@media (min-width:630px){
+    :root {
+        font-size: 11px;
+    }
+    /*------SERVICE SECTION STARTS HERE -----*/
+
+    #services>*{
+        margin: 3rem;
+    }
+    .ser-grid{
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3rem;
+    
+    }
+   
+    .ser-text{
+        min-height:55px;
+    }
+    .ser-card>*{
+        margin-bottom: 4px;
+    }
+    /*------SERVICE SECTION ENDS HERE -----*/
+
+    /*------CONTACT SECTION STARTS HERE -----*/
+    form input{
+        height: 2.49rem;
+      
+    }
+    form textarea{
+        height: 8.12rem;
+        resize: none;
+    }
+    /*------CONTACT SECTION ENDS HERE -----*/
+}
+
+@media (min-width:750px){
+                /*------CONTACT SECTION STARTS HERE -----*/
+
+:root {
+     font-size: 13px;
+}
+
+#contact{
+    min-height: 30vh;
+}
+
+.contact-flex-box{
+    padding-bottom: 0;
+
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 98%;
+    color: #4397A4;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 9rem;
+    /* padding: 3rem; */
+    justify-items: flex-start;
+
+}
+.contact-head p{
+    color: #5BCCDE; 
+    font-weight:300;
+}
+.contact-head{
+    margin:0;
+    margin-top:3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    
+}          
+.contact-box{
+    align-self: center;
+    /* border: 1px solid green; */
+    grid-row: span 2;
+    height: 80%;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    /* background-color:#C6DBFF; */
+    background-image: linear-gradient(90deg,#d8e5fb,#E1EBFA);
+    width: 90%;
+    border-radius: .3rem;
+    
+    margin-bottom: 3rem;
+    box-shadow: 0px 17.38px 34.75px 0px rgba(59, 130,246 ,.25);
+}
+
+
+.contact-icon-div{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red;    */
+    display: flex;
+    flex-direction: column;
+    gap:10%;
+    justify-content: flex-start;
+
+}
+.contact-icon-inner-div{
+    font-size: 1.18rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+.contact-icon-inner-div>img{
+    width: 4.1rem;
+    height: 4.1rem;
+    background-color:#DAE6FB ;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    border-radius: .2rem;
+}
+
+        /*------CONTACT SECTION ENDS HERE -----*/
+    
 }
