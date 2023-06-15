@@ -659,6 +659,7 @@ footer{
 
         /*------CONTACT SECTION ENDS HERE -----*/
     header{
+        background-image: url(resources/Bg.png);
         background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
