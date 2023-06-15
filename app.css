@@ -671,16 +671,30 @@ footer{
         background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100vw;
+  
     }
     header h1{
         width: 60%;
         line-height: 6.5rem;
         letter-spacing: .1rem;
-        margin:12.53rem 2rem 0 2rem;
+        margin:16.53rem 2rem 0 2rem;
     
     }
     header span{
         width: 51%;
+    }
+    .logo-bar>*{
+        margin: 0;
+        padding: 0;
+        gap: 0px;
+    }
+    .logo-bar img{
+        padding: 0;
+        margin: 0;
+        /* border: 1px solid red; */
+        width: 12rem;
+        height: 2.6rem;
     }
 }
 
