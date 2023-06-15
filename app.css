@@ -471,3 +471,9 @@ footer{
 }
 
 /*--------------FOOTER ENDS HERE ---------------------*/
+
+@media (max-width: 768px){
+    .testo-rev img{
+        object-fit: contain;
+    }
+}
