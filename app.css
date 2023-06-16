@@ -384,6 +384,7 @@ section:nth-child(2n+1){
              /*------CONTACT SECTION STARTS HERE -----*/
 
 #contact{
+    border: 1px solid red;
     width: 100%;
     color: #4397A4;
     display: flex;
@@ -515,6 +516,7 @@ footer{
     /* height: 50vh; */
     background-color: #486A6E;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -522,28 +524,64 @@ footer{
 .f-div-main{
     width: 90%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
     
 }
+
 .f-div-main>div{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
+.f-div-main h3{
+    width: 100%;
+}
+.f-div-main>p{
+    width: 50%;
+    justify-items: center;
+    /* border: 1px solid red; */
+    
+}
+
 .f-div-main-details{
+    
+    width: 100%;
     /* border: 1px solid red; */
     display: flex;
     /* flex-direction: ; */
     justify-content: space-between;
 }
-
+.f-div-main-details>div:nth-child(1){
+    
+    /* width: 85%; */
+}
+.f-div-main-details>div:nth-child(2){
+    
+    width: 10.24rem;
+}
+.social{
+    
+    /* width: 50%; */
+    width: 10.24rem;
+    display: inline-block;
+    justify-content: space-between;
+    /* margin-left: auto; */
+}
 .social>*{
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    /* margin-left: 1rem;
+    margin-bottom: 1rem; */
     font-size: 1.07rem;
     padding:.8rem;
     background-color: rgba(103, 140 , 146, .7);
     border-radius: .3rem;
 }
+#linkedin-svg,#fb-svg,#insta-svg{
+    width: 3rem;
+    height: 3rem;
+}
+
 
 /*--------------FOOTER ENDS HERE ---------------------*/
 
@@ -572,6 +610,10 @@ footer{
         padding-right: 3rem;
     }
     section{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    footer{
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -610,11 +652,51 @@ footer{
 }
 
 @media (min-width:750px){
-                /*------CONTACT SECTION STARTS HERE -----*/
+
 
 :root {
      font-size: 13px;
 }
+
+
+/*------HEADER STARTS HERE -----*/
+header{
+    background-image: url(resources/Bg.png);
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+min-height: 100vh;
+
+}
+header h1{
+    width: 80%;
+    line-height: 6.5rem;
+    letter-spacing: .1rem;
+    margin:16.53rem 2rem 0 2rem;
+
+}
+header span{
+    width: 78%;
+}
+.logo-bar>*{
+    margin: 0;
+    padding: 0;
+    gap: 0px;
+}
+.logo-bar img{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+    width: 12rem;
+    height: 2.6rem;
+}
+
+/*------HEADER ENDS HERE -----*/
+
+
+/*------CONTACT SECTION STARTS HERE -----*/
+
 
 #contact{
     min-height: 30vh;
@@ -624,8 +706,8 @@ footer{
     padding-bottom: 0;
 
     /* border: 1px solid red; */
-    width: 90%;
-    height: 98%;
+    /* width: 90%;
+    height: 98%; */
     color: #4397A4;
     display: grid;
     column-gap: 2rem;
@@ -696,37 +778,48 @@ footer{
 }
 
         /*------CONTACT SECTION ENDS HERE -----*/
-    header{
-        background-image: url(resources/Bg.png);
-        background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  min-height: 100vh;
-  
-    }
-    header h1{
-        width: 80%;
-        line-height: 6.5rem;
-        letter-spacing: .1rem;
-        margin:16.53rem 2rem 0 2rem;
+
+
+/*------FOOTER SECTION STARTS HERE -----*/
+
     
-    }
-    header span{
-        width: 78%;
-    }
-    .logo-bar>*{
-        margin: 0;
-        padding: 0;
-        gap: 0px;
-    }
-    .logo-bar img{
-        padding: 0;
-        margin: 0;
-        /* border: 1px solid red; */
-        width: 12rem;
-        height: 2.6rem;
-    }
+        
+
+        .f-div-main{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 0;
+            column-gap: 12rem;
+        }
+
+        .f-div-main h3{
+            grid-column: 1;
+            grid-row: 1;
+            width: 40%;
+            
+        }
+
+        .f-div-main>p{
+            grid-column: 1;
+            grid-row: 2;
+            width: 50%;
+            justify-items: center;
+            /* border: 1px solid red; */
+            
+        }
+        .social{
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .f-div-main-details{
+            grid-column: 2;
+            grid-row: span 3;
+            justify-content: space-between;
+            width: 90%;
+        }
+        /*------FOOTER ENDS HERE -----*/
+
 }
 
 @media (min-width:1250px){
@@ -755,7 +848,6 @@ footer{
     header h1{
         width: 65%;
         margin:5.53rem 2rem 0 2rem;
-        background-color: black;
     }
     header span{
         width:55%;
