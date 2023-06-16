@@ -25,11 +25,14 @@
     box-sizing: border-box;
     
     
+    
 }
 body{
+    width:100vw;
     /* height: 4000px; */
     font-family: 'Noto-Sans-Medium';
     color: white;
+    overflow-x: hidden;
 }
 
 
@@ -67,10 +70,11 @@ p{
 
 /*--------------HEADER STARTS HERE ---------------------*/
 header{
+    width: 100%;
     position: relative;
     background-image: url(resources/HeaderImg.png);
     background-size: cover;
-    min-height: 93vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +92,7 @@ header>*{
     margin:0;
     
     position: absolute;
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
     left: -10;
     top: -1000;
@@ -117,6 +121,12 @@ header span{
     justify-content:space-between;
     align-items: center;
 }
+.nav-bar{
+    display: none;
+}
+
+
+
 
 #h-btn{
     display: flex;
@@ -177,6 +187,7 @@ header span{
 
 section{
     background-color: #E1EBFA;
+    width: 100%;
 }
 section:nth-child(2n+1){
     background-color: #F4F7FF;
@@ -191,7 +202,7 @@ section:nth-child(2n+1){
     align-items: center;
     /* border: 2px solid blue; */
     height: auto;
-    width: 100vw;
+    width: 100%;
 
 }
 #services>*{
@@ -239,7 +250,7 @@ section:nth-child(2n+1){
              /*------PRODUCT SECTION STARTS HERE -----*/
 
 #products{
-    
+    width: 100%;
     /* height: 40vh; */
     display: flex;
     flex-direction: column;
@@ -373,7 +384,7 @@ section:nth-child(2n+1){
              /*------CONTACT SECTION STARTS HERE -----*/
 
 #contact{
-    width: 100vw;
+    width: 100%;
     color: #4397A4;
     display: flex;
     justify-content: center;
@@ -499,6 +510,7 @@ form button{
 /*--------------FOOTER STARTS HERE ---------------------*/
 
 footer{
+    width: 100%;
     padding:3rem 0 3rem 0;
     /* height: 50vh; */
     background-color: #486A6E;
@@ -544,6 +556,24 @@ footer{
 @media (min-width:630px){
     :root {
         font-size: 11px;
+    }
+   
+    .nav-bar{
+        display: block;
+    }
+    .nav-bar a{
+        color: white;
+        text-decoration: none;
+        margin: 2rem;
+        
+    }
+    header{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    section{
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     /*------SERVICE SECTION STARTS HERE -----*/
 
@@ -671,18 +701,18 @@ footer{
         background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
+  width: 100%;
   
     }
     header h1{
-        width: 60%;
+        width: 80%;
         line-height: 6.5rem;
         letter-spacing: .1rem;
         margin:16.53rem 2rem 0 2rem;
     
     }
     header span{
-        width: 51%;
+        width: 78%;
     }
     .logo-bar>*{
         margin: 0;
@@ -698,3 +728,35 @@ footer{
     }
 }
 
+@media (min-width:1250px){
+    :root {
+        font-size: 16px;
+   }
+    header h1{
+        width:80%;
+    }
+    header span{
+        width: 80%;
+    }
+}
+
+@media (min-width:1500px){
+    header h1{
+        width: 70%;
+        margin:6.53rem 2rem 0 2rem;
+    }
+    header span{
+        width:65%;
+    }
+}
+
+@media (min-width:1800px){
+    header h1{
+        width: 65%;
+        margin:5.53rem 2rem 0 2rem;
+        background-color: black;
+    }
+    header span{
+        width:55%;
+    }
+}
