@@ -28,7 +28,7 @@
     
 }
 body{
-    width:100vw;
+    width:93vw;
     /* height: 4000px; */
     font-family: 'Noto-Sans-Medium';
     color: white;
@@ -737,6 +737,9 @@ footer{
     }
     header span{
         width: 80%;
+    }
+    body{
+        min-height: 100vh;
     }
 }
 
