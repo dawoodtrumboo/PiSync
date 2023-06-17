@@ -1,5 +1,5 @@
+{
 var talkBtn = document.querySelector(".head-btn");
-console.log(talkBtn);
 
 // console.log(targetPos);
 talkBtn.addEventListener('click',function(){
@@ -24,3 +24,4 @@ talkBtn.addEventListener('click',function(){
 });
 
 
+}
