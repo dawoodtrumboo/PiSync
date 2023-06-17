@@ -295,6 +295,7 @@ section:nth-child(2n+1){
                 box-shadow: 0 .53rem 1.07rem rgba(0,0,0,0.1);
             }
             .slider .card .image{
+                position: relative;
                 height:90%;
                 width: 100%;
             
@@ -317,6 +318,9 @@ section:nth-child(2n+1){
                 /* margin-top: 10px; */
                 color: black;
               } 
+            .profession{
+                min-height: 3rem;
+            }
             .card h3, .card span{
                 color: #486A6F;
             }
@@ -325,60 +329,23 @@ section:nth-child(2n+1){
 
             display: none !important;
             }
+        
+            .img-blur{
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 98%;
+                background-color: rgba(0, 0, 0, .5);
+                backdrop-filter: blur(3px);
+            }
 
-/* .swiper-pagination{
-    position: absolute;
-    top: 450px;
-  }
-  
-  .swiper-pagination-bullet{
-    height: 7px;
-    width: 26px;
-    border-radius: 25px;
-    background: white;
-  }
-  
-  .swiper-button-next, .swiper-button-prev{
-    opacity: 0.7;
-    color: white;
-    transition: all 0.3s ease;
-  }
-  .swiper-button-next:hover, .swiper-button-prev:hover{
-    opacity: 1;
-    color: white;
-  } */
-  
-/* .swiper{
-    width: 950px;
-} */
-/* .slider-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: purple;
 
-} */
+
+
 /*
-.pro-grid{
-
-    display: flex;
-
-    justify-content: space-evenly;
-    gap: 1rem;
-    padding: .8rem;
-
-
-}
-.pro-card{
-    background-color: white;
-  
-    border-radius: .5rem;
-}
-
-.label{
-    margin: 2rem;
-}
-
 
 #products .btn-blue{
     padding: 1.5rem 7rem 1.5rem 7rem;
@@ -400,6 +367,25 @@ section:nth-child(2n+1){
 }
 .pro-card-style{
     background-image: linear-gradient(88.7deg,#C6DBFF,#E1EBFA);
+}
+.pro-grid{
+
+    display: flex;
+
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: .8rem;
+
+
+}
+.pro-card{
+    background-color: white;
+  
+    border-radius: .5rem;
+}
+
+.label{
+    margin: 2rem;
 }
 
 
@@ -795,71 +781,6 @@ header span{
 /*------HEADER ENDS HERE -----*/
 
 /*--------PRODUCT SECTION STARTS HERE--------*/
-
-#products{
-    /* width: 100%; */
-    height: 100vh;
-    /* width: 450px;
-    width: 1075px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* gap: 1.5rem;
-    padding:4rem 0 4rem 0; */
-  
-}
-.slider{
-    position: relative;
-    width: 90%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.swiper{
-   width: 950px;
-}
-.card{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: .5rem;
-    height: 400px;
-  margin: 20px 0;
-    /* height: 69%;
-    margin: 2.15rem; */
-    /* width: auto; */
-    box-shadow: 0 .53rem 1.07rem rgba(0,0,0,0.1);
-}
-.slider .card .image{
-    height:90%;
-    width: 100%;
-
-}
-.slider .card .image img{
-    /* border: 8px solid blue; */
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* border-radius: 20%; */
-     /* border: 3px solid #fff; */
-  }
-
-.card .name-profession{
-    
-    margin: 2rem;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    /* margin-top: 10px; */
-    color: black;
-  } 
-.card h3, .card span{
-    color: #486A6F;
-}
-
 
 /*--------PRODUCT SECTION ENDS HERE----------*/
 /*------CONTACT SECTION STARTS HERE -----*/
