@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PySync</title>
         <script src="https://kit.fontawesome.com/2af5e4f198.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 
     </head>
@@ -100,24 +101,89 @@
             <!--------PRODUCT SECTION STARTS HERE ------->
 
             <section id="products" style="color:#486A6F;">
-                <h2 >Products</h2>
-                <div class="pro-grid">
-                    <div class="pro-card">
-                        <img src="resources/Product Images/Photo.png" alt="img" style=" width: 100%;">
-                        <div class="label">
-                        <h3 class="m-bottom-2">Trip Docks</h3>
-                        <p>Building itineraries for travel agents</p>
-                    </div>
-                    </div>
-                    <div class="pro-card">
-                        <img src="resources/Product Images/Photo.png" alt="img" style=" width: 100%;">
-                        <div class="label">
-                        <h3 class="m-bottom-05">Trip Docks</h3>
-                        <p>Building itineraries for travel agents</p>
-                    </div>
-                    </div>
-                </div>
-                <!-- <div class="btn-blue">More</div>  -->
+                <article class="slider">
+    
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="resources/Product Images/Photo.png" alt="">
+            </div>
+            <div class="name-profession">
+              <h3 class="name">Trip Docks</h3>
+              <span class="profession">Building itineraries for travel agents</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="resources/Product Images/Photo.png" alt="">
+              </div>
+              <div class="name-profession">
+                <h3 class="name">Trip Docks</h3>
+                <span class="profession">Building itineraries for travel agents</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="resources/Product Images/Photo.png" alt="">
+              </div>
+              <div class="name-profession">
+                <h3 class="name">Trip Docks</h3>
+                <span class="profession">Building itineraries for travel agents</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="resources/Product Images/Photo.png" alt="">
+              </div>
+              <div class="name-profession">
+                <h3 class="name">Trip Docks</h3>
+                <span class="profession">Building itineraries for travel agents</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="resources/Product Images/Photo.png" alt="">
+              </div>
+              <div class="name-profession">
+                <h3 class="name">Trip Docks</h3>
+                <span class="profession">Building itineraries for travel agents</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img src="resources/Product Images/Photo.png" alt="">
+              </div>
+              <div class="name-profession">
+                <h3 class="name">Trip Docks</h3>
+                <span class="profession">Building itineraries for travel agents</span>
+              </div>
+            </div>
+          </div>
+          
+      
+        
+        
+
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+  </article>
             </section>
 
             <!--------PRODUCT SECTION ENDS HERE ------->
@@ -310,5 +376,8 @@
 
 
         <script src="app.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="./slider.js"></script>
     </body>
 </html>
