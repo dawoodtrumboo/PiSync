@@ -107,6 +107,7 @@ header h1{
     line-height: 6.5rem;
     text-align: center; 
     font-family: 'Noto-Sans-Display-Bold';
+    word-wrap:balance;
 
 }
 header span{
@@ -114,6 +115,7 @@ header span{
     font-size: 1.6rem; 
     width: 71%; 
     font-weight: 400;
+    word-wrap:balance;
 }
 #nav{
     /* border: 1px solid blue; */
@@ -282,16 +284,17 @@ section:nth-child(2n+1){
                 margin-top: 2rem;
             }
             .slider{
+                /* border: 1px solid red; */
                 position: relative;
                 width: 90%;
-                height: 80%;
+                height: 40%;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 margin-bottom: 3rem;
             }
             .swiper{
-               width: 950px;
+               width: 90% !important;
             }
             .card{
                 overflow: hidden;
@@ -299,7 +302,7 @@ section:nth-child(2n+1){
                 flex-direction: column;
                 background-color: white;
                 border-radius: .5rem;
-                height: 400px;
+                /* height: 75% !important; */
               margin: 20px 0;
                 /* height: 69%;
                 margin: 2.15rem; */
@@ -437,31 +440,51 @@ section:nth-child(2n+1){
     /* margin-top: 2rem; */
 }
 
-.testo-slider{
+/* .testo-slider{
     max-width: 90%;
-}
+} */
 
 .testo-box{
-    /* border: 1px solid red; */
+   
     color: #4397A4 !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    gap:4rem !important;  
+    gap:1.5rem !important;  
     height: 50%;
     width: 100%;
 }
-.testo-rev{
-    /* border: 1px solid red; */
-    color: #4397A4;
+.testo-container{
+   
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+
+
+}
+
+.testomonials{
     position: relative;
-    gap: 1rem;
-    margin:2.5rem !important;
-    display: flex !important;
-    flex-direction: column;
-    align-items: start;
-    
-  
+    padding: 50px 0;
+    width: 90%;
+    /* max-width: 1170px; */
+   
+    margin: 1.5rem;
+
+}
+
+.testomonials-item{
+    background-color: white;
+    padding: 30px;
+    /* border-radius: 20px; */
+}
+
+.stars ul{
+    color: gold ;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: .5rem;
 }
 .tem{
     display: flex;
@@ -474,27 +497,24 @@ section:nth-child(2n+1){
     /* box-shadow: 0 .1rem .53rem 0 rgba(0,0,0,0.2) !important; */
     padding: .3rem;
 }
-
-.testo-js{
-    box-shadow: 0 .86rem 1.6rem .43rem rgba(0,0,0,.2);  
-    height: 18rem;
-}
-.testo-card{
-    /* width: 85%; */
-    margin-bottom: 4rem;
-    
-    background-color: white;
-    display: flex;
+.testo-rev{
+    color: #4397A4;
+    position: relative;
+    gap: 1rem;
+    display: flex !important;
     flex-direction: column;
-    align-items: center;
-    box-shadow: 0 .86rem 1.6rem .43rem rgba(0,0,0,.2);
+    align-items: start;
+    
+  
 }
-.stars ul{
-    color: gold ;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: .5rem;
+.swiper-pagination{
+    /* position: relative; */
+    margin-top: 0px;
+    bottom: auto;
+}
+
+.swiper-pagination-bullet{
+    background-color: white;
 }
              /*------TESTOMONY SECTION ENDS HERE -----*/
 
@@ -714,15 +734,7 @@ footer{
         font-size: 11px;
     }
    
-    .nav-bar{
-        display: block;
-    }
-    .nav-bar a{
-        color: white;
-        text-decoration: none;
-        margin: 2rem;
-        
-    }
+  
     header{
         padding-left: 3rem;
         padding-right: 3rem;
@@ -778,7 +790,7 @@ footer{
 
 
 :root {
-     font-size: 13px;
+     font-size: 15px;
 }
 
 
@@ -798,6 +810,15 @@ header h1{
     letter-spacing: .1rem;
     /* margin:24.53rem 2rem 0 2rem; */
 
+}
+.nav-bar{
+    display: block;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    
 }
 header span{
     width: 78%;
@@ -949,24 +970,25 @@ header span{
 @media  (min-width:992px){
     header h1{
         width: 70%;
-        margin:7.53rem 2rem 0 2rem;
-    }
-}
-@media (min-width:1500px){
-    header h1{
-        width: 70%;
-        margin:6.53rem 2rem 0 2rem;
-    }
-    header span{
-        width:65%;
+        /* margin:7.53rem 2rem 0 2rem; */
     }
 }
 
+
 @media (min-width:1100px){
-    .slider{
+
+    .nav-bar a{
+        color: white;
+        text-decoration: none;
+        margin: 2.5rem;
+        
+        
+    }
+
+    /* .slider{
         padding-top: 0 !important;
         padding-bottom: 0 !important;
-        height: 80%;
+        height: 80%; 
         width: 100% !important;
     }
     .container{
@@ -977,14 +999,14 @@ header span{
         width: 2000px!important  ;
       
 
-    }
+    } */
     .card{
         overflow: hidden;
         display: flex;
         /* flex-direction: column; */
         background-color: white;
         border-radius: .5rem;
-        height: 100% !important;
+        /* height: 100% !important; */
       margin-top: 0 !important;
       margin-bottom: 0 !important;
      
@@ -1007,6 +1029,15 @@ header span{
   
 }
 
+@media (min-width:1500px){
+    header h1{
+        width: 70%;
+        /* margin:6.53rem 2rem 0 2rem; */
+    }
+    header span{
+        width:65%;
+    }
+}
 
 @media (min-width:1800px ){
     header h1{
