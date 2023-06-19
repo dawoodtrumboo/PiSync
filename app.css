@@ -76,7 +76,7 @@ header{
     position: relative;
     background-image: url(resources/HeaderImg.png);
     background-size: cover;
-    min-height: 93vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,7 @@ header>*{
     z-index: 0;
 }
 header h1{
-    margin:23.73rem 2rem 0 2rem;
+    /* margin:23.73rem 2rem 0 2rem; */
     line-height: 6.5rem;
     text-align: center; 
     font-family: 'Noto-Sans-Display-Bold';
@@ -127,7 +127,15 @@ header span{
     display: none;
 }
 
-
+.baseline-head{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content:end;
+    flex-grow: 1;
+}
 
 
 #h-btn{
@@ -411,6 +419,7 @@ section:nth-child(2n+1){
     margin-top: 2rem;
 }
 
+
 .logo-bar{
     margin: 0;
     border-top: .1rem solid #486A6E;
@@ -428,37 +437,52 @@ section:nth-child(2n+1){
     /* margin-top: 2rem; */
 }
 
+.testo-slider{
+    max-width: 90%;
+}
+
 .testo-box{
-    color: #4397A4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:4rem;  
+    border: 1px solid red;
+    color: #4397A4 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap:4rem !important;  
+    height: 50%;
+    width: 100%;
 }
 .testo-rev{
-
+    border: 1px solid red;
+    color: #4397A4;
     position: relative;
     gap: 1rem;
-    margin:2.5rem;
-    display: flex;
+    margin:2.5rem !important;
+    display: flex !important;
     flex-direction: column;
     align-items: start;
+    
+  
 }
 .tem{
     display: flex;
     align-items: center;
     gap: .8rem;
+    
 }
 
 .tem img{
-    box-shadow: 0 .1rem .53rem 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 .1rem .53rem 0 rgba(0,0,0,0.2) !important; */
     padding: .3rem;
 }
 
-
+.testo-js{
+    box-shadow: 0 .86rem 1.6rem .43rem rgba(0,0,0,.2);  
+    height: 18rem;
+}
 .testo-card{
-    width: 85%;
+    /* width: 85%; */
     margin-bottom: 4rem;
+    
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -466,7 +490,7 @@ section:nth-child(2n+1){
     box-shadow: 0 .86rem 1.6rem .43rem rgba(0,0,0,.2);
 }
 .stars ul{
-    color: gold;
+    color: gold ;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -711,11 +735,11 @@ footer{
         padding-left: 3rem;
         padding-right: 3rem;
     }
-
+/* 
     header h1{
         margin:8.53rem 2rem 0 2rem;
     
-    }
+    } */
     /*------SERVICE SECTION STARTS HERE -----*/
 
     #services>*{
@@ -772,7 +796,7 @@ header h1{
     width: 80%;
     line-height: 6.5rem;
     letter-spacing: .1rem;
-    margin:9.53rem 2rem 0 2rem;
+    /* margin:24.53rem 2rem 0 2rem; */
 
 }
 header span{
@@ -984,10 +1008,10 @@ header span{
 }
 
 
-@media (min-width:1800px){
+@media (min-width:1800px ){
     header h1{
         width: 65%;
-        margin:15.53rem 2rem 0 2rem;
+        /* margin:15.53rem 2rem 0 2rem; */
     }
     header span{
         width:55%;

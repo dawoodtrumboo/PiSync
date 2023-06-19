@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+{var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 20,
   slidesPerGroup: 2,
@@ -21,18 +21,29 @@ var swiper = new Swiper(".mySwiper", {
   }
   
 });
-
-// function setMobileClass() {
-//   var container = document.querySelector('.swiper-container');
-//   if (window.innerWidth < 768) {
-//     container.classList.add('mobile');
-//   } else {
-//     container.classList.remove('mobile');
-//   }
-// }
-
-// // Call the function when the window is resized
-// window.addEventListener('resize', setMobileClass);
-
-// // Set the initial class on page load
-// setMobileClass();
+}
+{
+  var swiper = new Swiper(".testo-js", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+   
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints:{
+      650: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      }
+    }
+    
+  });
+}
