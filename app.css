@@ -442,7 +442,7 @@ section:nth-child(2n+1){
 }
 
 .testo-box{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: #4397A4 !important;
     display: flex !important;
     flex-direction: column !important;
@@ -452,7 +452,7 @@ section:nth-child(2n+1){
     width: 100%;
 }
 .testo-rev{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: #4397A4;
     position: relative;
     gap: 1rem;
