@@ -113,9 +113,9 @@ header h1{
 header span{
     text-align: center ; 
     font-size: 1.6rem; 
-    width: 71%; 
+    width: 82%; 
     font-weight: 400;
-    word-wrap:balance;
+    word-wrap: balance;
 }
 #nav{
     /* border: 1px solid blue; */
@@ -134,9 +134,10 @@ header span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    gap: 4rem;
     justify-content:end;
     flex-grow: 1;
+    margin-bottom: 2rem;
 }
 
 
@@ -380,27 +381,19 @@ section:nth-child(2n+1){
     align-items: center;
     gap: .5rem;
 }
+
 .pro-card-style{
+    border: 1px solid transparent;
     background-image: linear-gradient(88.7deg,#C6DBFF,#E1EBFA);
 }
-.pro-grid{
 
-    display: flex;
-
-    justify-content: space-evenly;
-    gap: 1rem;
-    padding: .8rem;
-
-
-}
 .pro-card{
-    background-color: white;
-  
+    /* border: 1px solid red; */
     border-radius: .5rem;
 }
 
 .label{
-    margin: 2rem;
+    margin: 1rem;
 }
 
 
@@ -624,10 +617,10 @@ form button{
 
 }
 .contact-icon-inner-div{
-    font-size: 1.18rem;
+   font-size: 1.18rem;
    display: flex;
    align-items: center;
-   gap: 1rem;
+   gap: .5rem;
 }
 
 .contact-icon-inner-div>img{
