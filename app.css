@@ -403,6 +403,10 @@ section:nth-child(2n+1){
     margin-left: 1rem;
     /* height: 100%; */
 }
+.label p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 .team-card{
     margin-bottom: 4rem;
 }
@@ -420,7 +424,6 @@ section:nth-child(2n+1){
     align-items: center;
     /* justify-content: center; */
     margin-top: 0;
-    /* height: 60vh; */
 }
 
 #testo>*{
@@ -461,9 +464,9 @@ section:nth-child(2n+1){
 }
 .testo-container{
    
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 
 
 }
@@ -484,6 +487,20 @@ section:nth-child(2n+1){
     /* border-radius: 20px; */
 }
 
+.swiper{
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+.testomonials-slider{
+    /* box-shadow: 0 .1rem 3rem 0 rgba(0,0,0,0.2) !important; */
+    height: 190px !important;
+    max-height: 270px !important;
+}
+.testomonials-slider p{
+    font-size: .8rem !important;
+    line-height: 1.5rem;
+}
+
 .stars ul{
     color: gold ;
     display: flex;
@@ -499,7 +516,7 @@ section:nth-child(2n+1){
 }
 
 .tem img{
-    /* box-shadow: 0 .1rem .53rem 0 rgba(0,0,0,0.2) !important; */
+    
     padding: .3rem;
 }
 .testo-rev{
@@ -519,7 +536,7 @@ section:nth-child(2n+1){
 }
 
 .swiper-pagination-bullet{
-    background-color: white;
+    background-color: #4397A4;
 }
              /*------TESTOMONY SECTION ENDS HERE -----*/
 
@@ -728,11 +745,6 @@ footer{
 
 /*--------------FOOTER ENDS HERE ---------------------*/
 
-@media (max-width: 768px){
-    .testo-rev img{
-        object-fit: contain;
-    }
-}
 
 @media (min-width:630px){
     :root {
@@ -792,6 +804,9 @@ footer{
 }
 
 @media (min-width:768px){
+    .testo-rev img{
+        object-fit: contain;
+    }
 
 
 :root {
@@ -846,6 +861,15 @@ header span{
 /*--------PRODUCT SECTION STARTS HERE--------*/
 
 /*--------PRODUCT SECTION ENDS HERE----------*/
+
+
+
+.testomonials-slider{
+    height: 270px !important;
+    max-height: 270px !important;
+}
+
+
 /*------CONTACT SECTION STARTS HERE -----*/
 
 
@@ -1030,6 +1054,11 @@ header span{
     }
     header span{
         width: 80%;
+    }
+
+    .testomonials-slider{
+        height: 300px !important;
+        max-height: 340px !important;
     }
   
 }

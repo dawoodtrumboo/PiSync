@@ -25,3 +25,28 @@ talkBtn.addEventListener('click',function(){
 
 
 }
+{
+    var serviceBtn = document.querySelector(".service-btn");
+
+// console.log(targetPos);
+serviceBtn.addEventListener('click',function(){
+    var targetSection = document.getElementById("services");
+    var targetPos = targetSection.getBoundingClientRect().top;
+    
+    window.scrollTo({
+        top:targetSection.offsetTop,
+        behavior:'smooth'
+    });
+    
+    // var interval = setInterval(function(){
+    //     if(targetPos<=0){
+    //         clearInterval(interval);
+    //         return;
+    //     }
+    //     window.scrollBy(0,20);
+    //     targetPos-=20;
+    // },0);
+
+
+});
+}

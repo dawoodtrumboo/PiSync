@@ -17,14 +17,18 @@
   breakpoints:{
     1800:{
       slidesPerView: 5,
-      slidesPerGroup: 1,    }
-  },
-  breakpoints:{
-    768: {
+      slidesPerGroup: 1,    },
+    1200:{
       slidesPerView: 4,
+      slidesPerGroup: 1, 
+    },
+    900: {
+      slidesPerView: 3,
       slidesPerGroup: 1,
     }
+
   }
+ 
   
   
 });
@@ -48,13 +52,16 @@
   breakpoints:{
     1800:{
       slidesPerView: 5,
-      slidesPerGroup: 1,    }
-  },
-  breakpoints:{
-    768: {
+      slidesPerGroup: 1,    },
+    1200:{
       slidesPerView: 4,
+      slidesPerGroup: 1, 
+    },
+    900: {
+      slidesPerView: 3,
       slidesPerGroup: 1,
     }
+
   }
   
 });
@@ -68,7 +75,7 @@
         clicable:true
     },
     breakpoints:{
-        992:{
+        1100:{
             slidesPerView:2
         }
     }
