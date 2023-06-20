@@ -55,11 +55,13 @@ serviceBtn.addEventListener('click',function(){
     window.addEventListener("load", () => {
         const loader = document.querySelector(".loader");
       
-        loader.classList.add("loader--hidden");
-      
-        loader.addEventListener("transitionend", () => {
-          document.body.removeChild(loader);
-        });
+        setTimeout(() => {
+            loader.classList.add("loader--hidden");
+        
+            loader.addEventListener("transitionend", () => {
+              document.body.removeChild(loader);
+            });
+          }, 200);
       });
       
 }
