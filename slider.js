@@ -1,11 +1,11 @@
 {
   var swiper = new Swiper(".product-slider", {
-  slidesPerView: 2,
+  slidesPerView: 2  ,
   spaceBetween: 20,
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
  
-  loop: true,
-  loopFillGroupWithBlank: true,
+  // loop: true,
+  // loopFillGroupWithBlank: true,
   pagination: {
     el: ".product-pagination",
     clickable: true,
@@ -15,11 +15,17 @@
     prevEl: ".swiper-button-prev",
   },
   breakpoints:{
-    1050: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+    1800:{
+      slidesPerView: 5,
+      slidesPerGroup: 1,    }
+  },
+  breakpoints:{
+    768: {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
     }
   }
+  
   
 });
 }
@@ -27,10 +33,10 @@
   var swiper = new Swiper(".team-slider", {
   slidesPerView: 2,
   spaceBetween: 20,
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
  
-  loop: true,
-  loopFillGroupWithBlank: true,
+  // loop: true,
+  // loopFillGroupWithBlank: true,  
   pagination: {
     el: ".team-pagination",
     clickable: true,
@@ -40,9 +46,14 @@
     prevEl: ".swiper-button-prev",
   },
   breakpoints:{
-    1050: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
+    1800:{
+      slidesPerView: 5,
+      slidesPerGroup: 1,    }
+  },
+  breakpoints:{
+    768: {
+      slidesPerView: 4,
+      slidesPerGroup: 1,
     }
   }
   
@@ -51,7 +62,7 @@
 {
   const swiper = new Swiper('.js-testimonials-slider', {
     grabCursor:true,
-    spaceBetween:20,
+    spaceBetween:30,
     pagination:{
         el: '.js-testimonials-pagination',
         clicable:true
