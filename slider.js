@@ -1,4 +1,5 @@
-{var swiper = new Swiper(".mySwiper", {
+{
+  var swiper = new Swiper(".product-slider", {
   slidesPerView: 2,
   spaceBetween: 20,
   slidesPerGroup: 2,
@@ -6,7 +7,32 @@
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".product-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints:{
+    1050: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    }
+  }
+  
+});
+}
+{
+  var swiper = new Swiper(".team-slider", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  slidesPerGroup: 2,
+ 
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".team-pagination",
     clickable: true,
   },
   navigation: {
@@ -25,7 +51,7 @@
 {
   const swiper = new Swiper('.js-testimonials-slider', {
     grabCursor:true,
-    spaceBetween:30,
+    spaceBetween:20,
     pagination:{
         el: '.js-testimonials-pagination',
         clicable:true
@@ -37,3 +63,4 @@
     }
 });
 }
+
