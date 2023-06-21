@@ -367,8 +367,9 @@ section:nth-child(2n+1){
             }
             .slider .card .image{
                 position: relative;
-                height:90%;
+                height:140px;
                 width: 100%;
+                
             
             }
             .slider .card .image img{
@@ -861,6 +862,12 @@ footer{
     footer{
         padding-left: 3rem;
         padding-right: 3rem;
+    }
+
+    .slider .card .image{
+        height:220px;
+        
+    
     }
 /* 
     header h1{
