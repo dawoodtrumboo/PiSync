@@ -440,7 +440,7 @@ section:nth-child(2n+1){
 
 #team>p{
     color: #5BCCDE; 
-    font-weight:300;
+    /* font-weight:00; */
 }
 #team>h2{
     margin-bottom: 3.5rem;
@@ -458,7 +458,37 @@ section:nth-child(2n+1){
     row-gap: 2rem;
     /* border: 1px solid red; */
     border-radius: .5rem;
+    /* max-height: 350px; */
     
+}
+
+.team-img{
+    height: 0;
+padding-bottom: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+.team-img-c1{
+    background-image: url(resources/Team-Images/Sohail.jpeg);
+}
+.team-img-c2{
+    background-image: url(resources/Team-Images/Ibrahim.jpeg);
+}
+.team-img-c3{
+    background-image: url(resources/Team-Images/Musaib.jpeg);
+}
+.team-img-c4{
+    background-image: url(resources/Team-Images/Tawheed.jpeg);
+}
+.team-img-c5{
+    background-image: url(resources/Team-Images/Sameer.jpeg);
+}
+.team-img-c6{
+    background-image: url(resources/Team-Images/Dawood.jpeg);
 }
 
 .label{
@@ -469,7 +499,7 @@ section:nth-child(2n+1){
 }
 .label p{
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 .team-card{
     margin-bottom: 4rem;
