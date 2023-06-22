@@ -22,7 +22,7 @@
       slidesPerView: 4,
       slidesPerGroup: 1, 
     },
-    900: {
+    768: {
       slidesPerView: 3,
       slidesPerGroup: 1,
     }
@@ -34,6 +34,7 @@
 });
 }
 {
+  if(window.innerWidth<767){
   var swiper = new Swiper(".team-slider", {
   slidesPerView: 2,
   spaceBetween: 20,
@@ -50,14 +51,7 @@
     prevEl: ".swiper-button-prev",
   },
   breakpoints:{
-    1800:{
-      slidesPerView: 5,
-      slidesPerGroup: 1,    },
-    1200:{
-      slidesPerView: 4,
-      slidesPerGroup: 1, 
-    },
-    900: {
+    768: {
       slidesPerView: 3,
       slidesPerGroup: 1,
     }
@@ -65,6 +59,7 @@
   }
   
 });
+  }
 }
 {
   const swiper = new Swiper('.js-testimonials-slider', {

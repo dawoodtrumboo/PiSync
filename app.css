@@ -844,7 +844,11 @@ footer{
 
 /*--------------FOOTER ENDS HERE ---------------------*/
 
-
+@media (max-width:330px){
+    :root{
+        font-size: 8px;
+    }
+}
 @media (min-width:630px){
     :root {
         font-size: 11px;
@@ -915,7 +919,7 @@ footer{
 
 
 :root {
-     font-size: 15px;
+     font-size: 12px;
 }
 
 
@@ -1101,11 +1105,25 @@ header span{
         /*------FOOTER ENDS HERE -----*/
 
 }
-@media  (min-width:992px){
+@media  (min-width:990px){
     header h1{
         width: 70%;
         /* margin:7.53rem 2rem 0 2rem; */
     }
+
+    
+        .team-swiper {
+          display: grid !important;
+          grid-template-columns: repeat(3, 1fr) !important;
+          grid-template-rows: repeat(2, 1fr) !important;
+          gap: 20px;
+        }
+      
+        .team-card{
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+      
 }
 
 
@@ -1137,16 +1155,10 @@ header span{
     .card{
         overflow: hidden;
         display: flex;
-        /* flex-direction: column; */
         background-color: white;
         border-radius: .5rem;
-        /* height: 100% !important; */
       margin-top: 0 !important;
       margin-bottom: 0 !important;
-     
-        /* height: 69%;
-        margin: 2.15rem; */
-        /* width: auto; */
         box-shadow: none;
     }
 }
