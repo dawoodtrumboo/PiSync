@@ -15,13 +15,6 @@
     prevEl: ".swiper-button-prev",
   },
   breakpoints:{
-    1800:{
-      slidesPerView: 5,
-      slidesPerGroup: 1,    },
-    1200:{
-      slidesPerView: 4,
-      slidesPerGroup: 1, 
-    },
     768: {
       slidesPerView: 3,
       slidesPerGroup: 1,
@@ -33,33 +26,53 @@
   
 });
 }
+// {
+//   var swiper = new Swiper(".team-slider", {
+//   slidesPerView: 2,
+//   spaceBetween: 20,
+//   slidesPerGroup: 1,
+ 
+//   // loop: true,
+//   // loopFillGroupWithBlank: true,  
+//   pagination: {
+//     el: ".team-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints:{
+//     768: {
+//       slidesPerView: 3,
+//       slidesPerGroup: 1,
+//     }
+
+//   }
+  
+// });
+//   }
 {
-  var swiper = new Swiper(".team-slider", {
+  if(window.innerWidth<728){
+  const swiper = new Swiper('.teamSwiper', {
+    grabCursor:true,
   slidesPerView: 2,
   spaceBetween: 20,
-  slidesPerGroup: 1,
- 
-  // loop: true,
-  // loopFillGroupWithBlank: true,  
-  pagination: {
-    el: ".team-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints:{
-    768: {
-      slidesPerView: 3,
-      slidesPerGroup: 1,
+  slidesPerGroup: 2,
+   
+    pagination:{
+        el: '.team-pagination',
+        clicable:true
+    },
+    breakpoints:{
+        600:{
+            slidesPerView:3,
+            slidesPerGroup:1,
+        }
     }
-
-  }
-  
 });
-  }
-
+}
+}
 {
   const swiper = new Swiper('.js-testimonials-slider', {
     grabCursor:true,
