@@ -34,7 +34,6 @@
 });
 }
 {
-  if(window.innerWidth<767){
   var swiper = new Swiper(".team-slider", {
   slidesPerView: 2,
   spaceBetween: 20,
@@ -60,7 +59,7 @@
   
 });
   }
-}
+
 {
   const swiper = new Swiper('.js-testimonials-slider', {
     grabCursor:true,

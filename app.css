@@ -1112,17 +1112,6 @@ header span{
     }
 
     
-        .team-swiper {
-          display: grid !important;
-          grid-template-columns: repeat(3, 1fr) !important;
-          grid-template-rows: repeat(2, 1fr) !important;
-          gap: 20px;
-        }
-      
-        .team-card{
-          grid-column: span 1;
-          grid-row: span 1;
-        }
       
 }
 
