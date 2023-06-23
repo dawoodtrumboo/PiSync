@@ -159,6 +159,16 @@ header span{
     font-weight: 400;
     word-wrap: balance;
 }
+ #brand{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+ #brand>img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+ }
 #nav{
     /* border: 1px solid blue; */
     width: 90%;
@@ -531,7 +541,7 @@ section:nth-child(2n+1){
         
             @media (min-width:1200px) {
                 .team-container{
-                    width: 70%;
+                    width: 75%;
                 }
                 .team-wrapper{
                     gap: 4rem;
