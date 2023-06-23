@@ -1199,11 +1199,10 @@ margin:4rem auto;
         width: 80%;
     }
     .team-container{
-        border: 1px solid red;
         width: 75%;
     }
     .team-wrapper{
-        border: 1px solid green;
+    
         gap: 2rem;
     }
 
