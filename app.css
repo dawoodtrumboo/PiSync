@@ -448,6 +448,7 @@ section:nth-child(2n+1){
             }
             .team-container{
                 margin-top: 2rem;
+                max-width: 800px !important;
                 /* border: 1px solid red; */
             }
             .team-wrapper{
@@ -497,63 +498,6 @@ section:nth-child(2n+1){
             }
             
         
-            @media (min-width:720px){
-                .team-img{
-                    width: 100%;
-                    height: 200px;
-                    overflow: hidden;
-                 }
-                .team-pagination{
-                    display: none;
-                }
-                .team-container{
-                max-width:1200px;
-                width:90%;
-                height: 80%;
-                position:relative;
-                margin:4rem auto;
-             
-        
-                }
-                .team-wrapper{
-                    display: grid;
-                    /* grid-template-columns: repeat(3,1fr); */
-                    grid-template-columns: repeat(3, minmax(100px, 1fr));
-                    grid-template-rows: repeat(2,1fr);
-                    gap: 2rem;
-                    justify-content: center;
-                }
-                .slider{
-                    gap: 2rem !important; 
-                    width: 72%;
-                }
-            }
-        
-            @media (min-width:1100px) {
-                .team-container{
-                    width: 60%;
-                }
-                 
-                 .slider{
-                    gap: 3rem;
-                 }
-            }
-        
-            @media (min-width:1200px) {
-                .team-container{
-                    width: 75%;
-                }
-                .team-wrapper{
-                    gap: 4rem;
-                }
-                
-            }
-            @media (min-width:1500px) {
-                .team-container{
-                    width: 40%;
-                }
-                
-            }
 
 
             /*------TEAM SECTION ENDS HERE -----*/ 
@@ -892,9 +836,9 @@ footer{
 
 /*--------------FOOTER ENDS HERE ---------------------*/
 
-@media (max-width:330px){
+@media (max-width:370px){
     :root{
-        font-size: 7px;
+        font-size: 5px;
     }
     .testomonials-slider{
         height: 160px !important;
@@ -904,7 +848,7 @@ footer{
 }
 @media (min-width:630px){
     :root {
-        font-size: 11px;
+        font-size: 10px;
     }
    
   
@@ -972,7 +916,7 @@ footer{
 
 
 :root {
-     font-size: 12px;
+     font-size: 11px;
 }
 
 
@@ -1021,6 +965,36 @@ header span{
 /*------HEADER ENDS HERE -----*/
 
 /*--------PRODUCT SECTION STARTS HERE--------*/
+
+.team-img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+ }
+.team-pagination{
+    display: none;
+}
+.team-container{
+max-width:1200px;
+width:90%;
+height: 80%;
+position:relative;
+margin:4rem auto;
+
+
+}
+.team-wrapper{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+    justify-content: center;
+}
+.slider{
+    gap: 2rem !important; 
+    width: 72%;
+}
 
 /*--------PRODUCT SECTION ENDS HERE----------*/
 
@@ -1180,6 +1154,13 @@ header span{
         
         
     }
+    .team-container{
+        width: 60%;
+    }
+     
+     .slider{
+        gap: 3rem;
+     }
 
     /* .slider{
         padding-top: 0 !important;
@@ -1206,20 +1187,32 @@ header span{
         box-shadow: none;
     }
 }
-@media (min-width:1250px){
+@media (min-width:1200px){
     :root {
-        font-size: 16px;
+        font-size: 14px;
    }
+   
     header h1{
         width:80%;
     }
     header span{
         width: 80%;
     }
+    .team-container{
+        border: 1px solid red;
+        width: 75%;
+    }
+    .team-wrapper{
+        border: 1px solid green;
+        gap: 2rem;
+    }
 
     .testomonials-slider{
         height: 300px !important;
         max-height: 340px !important;
+    }
+    .swiper-slide   {
+        /* margin-right: 2rem !important; */
     }
   
 }
@@ -1232,6 +1225,9 @@ header span{
     header span{
         width:65%;
     }
+    .team-container{
+        width: 40%;
+    }
 }
 
 @media (min-width:1800px ){
@@ -1242,4 +1238,21 @@ header span{
     header span{
         width:55%;
     }
+}
+
+
+@media (min-width:720px){
+    
+}
+
+@media (min-width:1100px) {
+   
+}
+
+@media (min-width:1200px) {
+   
+}
+@media (min-width:1500px) {
+   
+    
 }
