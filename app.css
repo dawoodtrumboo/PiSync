@@ -836,20 +836,7 @@ footer{
 
 /*--------------FOOTER ENDS HERE ---------------------*/
 
-@media (max-width:380px){
-    :root{
-        font-size: 6px;
-    }
 
-    #team{
-        padding: 3rem 6rem;
-    }
-    .testomonials-slider{
-        height: 160px !important;
-        max-height: 160px !important;
-    }
-
-}
 @media (min-width:630px){
     :root {
         font-size: 10px;
@@ -1242,20 +1229,18 @@ margin:4rem auto;
         width:55%;
     }
 }
+@media (max-width:400px){
+    :root{
+        font-size: 6px;
+    }
 
+    #team{
+        padding: 3rem 6rem;
+    }
+    .testomonials-slider{
+        height: 160px !important;
+        max-height: 160px !important;
+    }
 
-@media (min-width:720px){
-    
 }
 
-@media (min-width:1100px) {
-   
-}
-
-@media (min-width:1200px) {
-   
-}
-@media (min-width:1500px) {
-   
-    
-}
