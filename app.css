@@ -836,10 +836,10 @@ footer{
 
 /*--------------FOOTER ENDS HERE ---------------------*/
 
-@media (max-width:370px){
-    /* :root{
-        font-size: 5px;
-    } */
+@media (max-width:380px){
+    :root{
+        font-size: 7px;
+    }
 
     #team{
         padding: 3rem 6rem;
