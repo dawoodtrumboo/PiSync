@@ -478,7 +478,7 @@ section:nth-child(2n+1){
              }
              .label{
                 text-align: start;
-                padding: 5% 0 10% 10%;
+                padding: 5% 5% 10% 10%;
              }
              .label>*{
                 margin: 0;
@@ -837,8 +837,12 @@ footer{
 /*--------------FOOTER ENDS HERE ---------------------*/
 
 @media (max-width:370px){
-    :root{
+    /* :root{
         font-size: 5px;
+    } */
+
+    #team{
+        padding: 3rem 6rem;
     }
     .testomonials-slider{
         height: 160px !important;

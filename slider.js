@@ -56,15 +56,19 @@
   if(window.innerWidth<728){
   const swiper = new Swiper('.teamSwiper', {
     grabCursor:true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
-  slidesPerGroup: 2,
+  slidesPerGroup: 1,
    
     pagination:{
         el: '.team-pagination',
         clicable:true
     },
     breakpoints:{
+        370:{
+          slidesPerView:2,
+          slidesPerGroup:1,
+        },
         600:{
             slidesPerView:3,
             slidesPerGroup:1,
